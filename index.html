@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎉 49 Anos de Claudiane! 🎉</title>
+    <title>🌸 Aniversário de Claudiane! 🥂</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
     <style>
         /* Estilos CSS incorporados para simplificar o envio de um único arquivo */
         :root {
-            /* Cores alegres e vibrantes (sem vermelho) */
-            --cor-principal: #FFD700; /* Amarelo Ouro */
-            --cor-secundaria: #00BFFF; /* Azul Claro/Céu */
-            --cor-acento: #32CD32; /* Verde Lima - COR PARA CONFIRMAÇÃO */
-            --cor-fundo: #F0FFF0; /* Quase Branco/Menta Claro */
-            --cor-texto: #333333;
+            /* Cores Suaves e Femininas (Bege, Nude, Verde para Ação) */
+            --cor-principal: #F3D8D8; /* Nude/Rosa Suave (Fundo do Formulário) */
+            --cor-secundaria: #E7C5A3; /* Bege Quente/Champagne (Header) */
+            --cor-acento: #32CD32; /* Verde Lima (COR DE AÇÃO/CONFIRMAÇÃO) */
+            --cor-fundo: #FAF8F5; /* Bege Claríssimo (Fundo do Body) */
+            --cor-texto: #585858; /* Texto mais suave, mas legível */
         }
 
         * {
@@ -41,13 +41,13 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             text-align: center;
-            border: 5px solid var(--cor-principal);
+            border: 5px solid var(--cor-secundaria); /* Borda bege suave */
         }
 
         .header-convite {
             background-color: var(--cor-secundaria);
             padding: 40px 20px;
-            color: white;
+            color: var(--cor-texto); /* Texto escuro no header suave */
             position: relative;
         }
 
@@ -55,31 +55,32 @@
             font-size: 2.5em;
             margin-bottom: 5px;
             font-weight: 800;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Sombra clara */
         }
 
         .header-convite p {
             font-size: 1.2em;
             font-weight: 600;
         }
-
-        .idade {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 6em;
-            font-weight: 800;
-            color: rgba(255, 255, 255, 0.15);
-            z-index: 0;
+        
+        /* Estilo para destacar o 49 no título, se necessário */
+        .header-convite h1 strong {
+            color: white; /* Cor de destaque */
+            background-color: #b7906d; /* Um tom de bege mais escuro para o fundo do destaque */
+            padding: 2px 8px;
+            border-radius: 5px;
+            margin: 0 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            font-size: 1.1em; /* Ligeiramente maior que o texto ao redor */
         }
+
 
         .details-convite {
             padding: 30px 20px;
         }
 
         .details-convite h2 {
-            color: var(--cor-acento);
+            color: var(--cor-secundaria); /* Destaque em bege */
             margin-bottom: 15px;
             font-size: 1.8em;
             font-weight: 600;
@@ -90,7 +91,8 @@
             border-radius: 10px;
             padding: 20px;
             margin-bottom: 25px;
-            border-left: 5px solid var(--cor-acento);
+            border-left: 5px solid var(--cor-acento); /* Borda verde para informação clara */
+            color: var(--cor-texto);
         }
 
         .info-box p {
@@ -101,7 +103,7 @@
         /* Formulário RSVP (Confirmação de Presença) */
         .rsvp-form {
             padding: 20px;
-            background-color: var(--cor-principal);
+            background-color: var(--cor-principal); /* Fundo Nude/Rosa Suave */
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
         }
@@ -142,8 +144,8 @@
         
         /* Botão Adicionar Convidado */
         #btnAddConvidado {
-            background-color: var(--cor-secundaria); /* Azul */
-            color: white;
+            background-color: var(--cor-secundaria); /* Bege */
+            color: var(--cor-texto);
             border: none;
             padding: 10px 15px;
             border-radius: 8px;
@@ -157,7 +159,7 @@
         }
 
         #btnAddConvidado:hover {
-            background-color: #0099D4; /* Azul mais escuro */
+            background-color: #D6B291; /* Bege um pouco mais escuro */
         }
 
         /* Estilo para a área de nomes extras (cria espaço entre os inputs) */
@@ -166,7 +168,7 @@
         }
 
         #btnConfirmar {
-            background-color: var(--cor-acento); /* Verde */
+            background-color: var(--cor-acento); /* Verde (Ação Importante) */
             color: white;
             border: none;
             padding: 15px 30px;
@@ -194,14 +196,13 @@
 
     <div class="convite-card">
         <div class="header-convite">
-            <span class="idade">49</span>
-            <h1>Festa de Aniversário</h1>
+            <h1>Festa de Aniversário de <strong>49</strong> Anos 🎂</h1>
             <p>de</p>
-            <h1>CLAUDIANE</h1>
+            <h1>CLAUDIANE ✨</h1>
         </div>
 
         <div class="details-convite">
-            <h2>Você é meu Convidado Especial!</h2>
+            <h2>Você é meu Convidado Especial! 💖</h2>
             
             <div class="info-box">
                 <p><strong>🗓️ DATA: Sábado, 01 de Novembro</strong></p>
@@ -209,11 +210,11 @@
                 <p><strong>📍 LOCAL: Residencial Santa Bárbara - 1ª Etapa - Parque do Lago</strong></p>
             </div>
 
-            <p style="margin-bottom: 25px; font-weight: 600;">Venha celebrar os meus 49 anos com muita alegria e boas energias! Sua presença é o maior presente.</p>
+            <p style="margin-bottom: 25px; font-weight: 600;">Venha celebrar meus 49 anos com alegria e boas energias! Um brinde à vida! 🥂🎁</p>
         </div>
 
         <div class="rsvp-form">
-            <h3>Confirme sua Presença</h3>
+            <h3>Confirme sua Presença 👇</h3>
             <form id="rsvpForm">
                 <div class="form-group">
                     <label for="nome" class="required">Seu Nome:</label>
@@ -221,7 +222,7 @@
                 </div>
                 
                 <button type="button" id="btnAddConvidado">
-                    + Adicionar Mais Convidados
+                    + Adicionar Mais Convidados 👥
                 </button>
 
                 <div class="form-group" id="outrosNomesContainer">
@@ -236,7 +237,7 @@
                 </div>
                 
                 <button type="submit" id="btnConfirmar">
-                    CONFIRMAR PRESENÇA VIA WHATSAPP
+                    ✅ ENVIAR CONFIRMAÇÃO VIA WHATSAPP
                 </button>
             </form>
         </div>
@@ -248,7 +249,7 @@
         const totalPessoasInput = document.getElementById('totalPessoas');
         const labelOutrosNomes = document.getElementById('labelOutrosNomes');
 
-        let contadorExtras = 0; // Começa em 0, pois o primeiro nome é o convidado principal
+        let contadorExtras = 0; // Conta quantos campos extras foram adicionados (Começa em 0)
 
         // Função para adicionar um novo campo de convidado extra
         function adicionarCampoConvidado() {
@@ -258,8 +259,10 @@
             inputExtra.type = 'text';
             inputExtra.name = `nomeExtra_${contadorExtras}`;
             inputExtra.className = 'nome-extra-input'; // Classe para fácil seleção depois
-            // *** ALTERAÇÃO CHAVE: REMOVIDO inputExtra.required = true; ***
-            inputExtra.placeholder = `Nome do ${contadorExtras}º Convidado Extra (Opcional)`;
+            
+            // LÓGICA ATUALIZADA: Começa a contagem a partir do 2º convidado total
+            const numeroConvidado = contadorExtras + 1; 
+            inputExtra.placeholder = `Nome do ${numeroConvidado}º Convidado (Opcional)`;
             
             outrosNomesContainer.appendChild(inputExtra);
             
@@ -283,6 +286,7 @@
             const nome = document.getElementById('nome').value.trim();
             const telefone = document.getElementById('telefone').value.trim();
             
+            // totalPessoas usa o valor atual do input hidden (1 + contadorExtras)
             const totalPessoas = parseInt(totalPessoasInput.value, 10); 
             
             // 1. Validação dos campos PRINCIPAIS (Nome e Telefone)
@@ -302,9 +306,6 @@
                 }
             });
             
-            // 3. O Total de Pessoas agora é o convidado principal (1) + o número de nomes extras que FORAM ADICIONADOS (contadorExtras), INDEPENDENTE de terem sido preenchidos.
-            // O WhatsApp deve refletir o número de espaços que o usuário reservou.
-            
             // Determina a forma plural/singular da mensagem
             const pessoasText = totalPessoas === 1 ? "pessoa" : "pessoas";
             const contemText = totalPessoas === 1 ? "Conto" : "Contem";
@@ -312,13 +313,14 @@
             // Inicia a mensagem de confirmação
             let mensagem = `🥳 PRESENÇA CONFIRMADA! 🎉
 
-Olá! Eu, *${nome.toUpperCase()}*, confirmo a presença de *${totalPessoas} ${pessoasText}* (incluindo eu) e estou super animado(a) para celebrar os seus 49 anos! ${contemText} conosco na festa! 😉`;
+Olá! Eu, *${nome.toUpperCase()}*, confirmo a presença de *${totalPessoas} ${pessoasText}* (incluindo eu) e estou super animado(a) para celebrar os 49 anos da Claudiane! ${contemText} conosco na festa! 😉`;
 
-            // 4. Adiciona a lista de nomes extras APENAS SE TIVEREM SIDO PREENCHIDOS (melhor para o formato da mensagem)
+            // 4. Adiciona a lista de nomes extras APENAS SE TIVEREM SIDO PREENCHIDOS
             if (nomesExtras.length > 0) {
                 mensagem += `\n\n*Os outros convidados são:*\n` + nomesExtras.map(n => `• ${n}`).join('\n');
             } else if (totalPessoas > 1) {
-                 // Se o usuário adicionou caixas, mas não preencheu nenhuma (para evitar a lista vazia)
+                 // Se o usuário adicionou caixas, mas não preencheu nenhuma (para informar que o espaço está reservado)
+                 // totalPessoas - 1 é o número de espaços extras reservados
                  mensagem += `\n\n*Obs:* ${totalPessoas - 1} convidado(s) adicional(is) será(ão) levado(s), mas o(s) nome(s) não foi(foram) informado(s).`;
             }
             
@@ -329,6 +331,7 @@ Olá! Eu, *${nome.toUpperCase()}*, confirmo a presença de *${totalPessoas} ${pe
             const mensagemEncoded = encodeURIComponent(mensagem);
 
             // Cria o link do WhatsApp
+            // Telefone de destino fixo: 65993037820
             const linkWhatsapp = `https://api.whatsapp.com/send?phone=65993037820&text=${mensagemEncoded}`;
 
             // Abre o link em uma nova aba
